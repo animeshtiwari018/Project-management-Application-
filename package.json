@@ -1,0 +1,15 @@
+{
+  "name": "project-management",
+  "version": "1.0.0",
+  "description": "A project management application for learning purpose ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "author": "Animesh Tiwari",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "3.8.4"
+  }
+}
