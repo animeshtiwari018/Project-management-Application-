@@ -16,6 +16,12 @@ app.use(
     allowedHeaders: ["Authorization", "Content-Type"],
   }),
 );
+
+// import the routes
+import healthCheckRouter from "./routes/healthcheck.routes.js";
+
+app.use("/api/v1/healthCheck", healthCheckRouter);
+
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
