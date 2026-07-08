@@ -18,11 +18,17 @@ const userSchema = new Schema({
     lowercase: true,
     trim: true,
     index: true,
-
   },
 
-  
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+    lowercase: true,
+    trim: true,
+  },
 
+ 
 });
 
 export const userSchema = mongoose.model("User", userSchema);
