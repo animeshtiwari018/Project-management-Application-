@@ -41,6 +41,12 @@ const userSchema = new Schema({
   },
   refreshToken: {
     type: String
+  },
+  forgetPasswordToken:{
+    type: String
+  },
+  forgetPasswordExpiry:{
+    type: Date
   }
 });
 
