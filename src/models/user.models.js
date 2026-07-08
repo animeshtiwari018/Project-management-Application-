@@ -36,6 +36,12 @@ const userSchema = new Schema({
     type: String,
     require: [true, "Password is required"],
   },
+  isEmailVerifies: {
+    type: String
+  },
+  refreshToken: {
+    type: String
+  }
 });
 
 export const userSchema = mongoose.model("User", userSchema);
