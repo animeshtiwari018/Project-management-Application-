@@ -32,7 +32,10 @@ const userSchema = new Schema({
     type: String,
     trim: true,
   },
-  
+  password: {
+    type: String,
+    require: [true, "Password is required"],
+  },
 });
 
 export const userSchema = mongoose.model("User", userSchema);
