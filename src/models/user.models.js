@@ -59,5 +59,5 @@ const userSchema = new Schema({
 },
 
 );
-add 
+
 export const userSchema = mongoose.model("User", userSchema);
