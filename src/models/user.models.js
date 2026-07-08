@@ -28,7 +28,11 @@ const userSchema = new Schema({
     trim: true,
   },
 
- 
+  fullName: {
+    type: String,
+    trim: true,
+  },
+  
 });
 
 export const userSchema = mongoose.model("User", userSchema);
