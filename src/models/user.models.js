@@ -47,6 +47,12 @@ const userSchema = new Schema({
   },
   forgetPasswordExpiry:{
     type: Date
+  },
+  emailVerificationToken: {
+    type: String
+  },
+  emailVerificationExpiry: { 
+    type: Date
   }
 });
 
